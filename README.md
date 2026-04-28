@@ -1,6 +1,6 @@
 # Joshua Jaggernauth — Portfolio
 
-**Live Site:** [jjagger23.github.io](https://jjagger23.github.io)
+**Live Site:** https://jjagger23.github.io/Jaggernauth_Portfolio/
 
 A personal portfolio website showcasing my academic projects, technical skills, and professional background as an Information Technology student at the University of Central Florida with an incoming M.S. in Cybersecurity and Privacy.
 
