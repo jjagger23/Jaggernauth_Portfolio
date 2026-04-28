@@ -1,0 +1,94 @@
+<!-- project-six.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 6 | Cisco Network Design Labs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Joshua Jaggernauth</h1>
+      <address class="contact">
+        <a href="mailto:jag06619@icloud.com">jag06619@icloud.com</a>
+        <span aria-hidden="true">•</span>
+        <a href="https://www.linkedin.com/in/joshua-jaggernauth" target="_blank" rel="noopener">LinkedIn Profile</a>
+      </address>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Resume</a></li>
+          <li class="nav-group">
+            <button class="nav-group-btn" type="button" aria-label="Open projects menu">
+              Projects <span class="chev" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="nav-dropdown" aria-label="Projects">
+              <li><a href="project-one.html">Nile Dot Com</a></li>
+              <li><a href="project-two.html">Banking Simulator</a></li>
+              <li><a href="project-three.html">Client-Server App</a></li>
+              <li><a href="project-four.html">Three-Tier Web App</a></li>
+              <li><a href="project-five.html">CineTrack</a></li>
+              <li><a href="project-six.html" aria-current="page">Cisco Network Labs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h2>Project 6: Cisco Network Design Labs</h2>
+      <p class="page-intro">Enterprise network design and configuration exercises completed using Cisco Packet Tracer, covering VLANs, routing, and IPv4/IPv6 addressing.</p>
+    </header>
+
+    <article class="project">
+      <section class="section" aria-labelledby="description-title">
+        <h3 id="description-title">Project Description</h3>
+        <p>This collection of Cisco Packet Tracer labs covers enterprise network design, configuration, and troubleshooting using Cisco IOS commands. The labs progress from foundational LAN switching concepts through advanced WAN routing configurations, building practical networking skills directly applicable to real-world IT and cybersecurity environments.</p>
+        <p>Key labs include multi-switch VLAN segmentation, inter-VLAN routing using router sub-interfaces, trunk interface configuration, static routing over WAN serial connections, IPv4 subnetting with CIDR notation, and IPv6 addressing and routing exercises.</p>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <h3 id="skills-title">Technologies &amp; Skills Used</h3>
+        <ul>
+          <li>Cisco Packet Tracer for network simulation and configuration</li>
+          <li>Cisco IOS CLI commands for switch and router configuration</li>
+          <li>VLAN creation, assignment, and segmentation across multiple switches</li>
+          <li>Trunk interfaces for inter-switch VLAN communication</li>
+          <li>Router sub-interfaces for inter-VLAN routing (Router-on-a-Stick)</li>
+          <li>Static routing configuration over WAN serial connections</li>
+          <li>IPv4 subnetting, CIDR notation, and subnet planning</li>
+          <li>IPv6 addressing, prefix notation, and static routing</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="relevance-title">
+        <h3 id="relevance-title">Relevance to Cybersecurity &amp; IT</h3>
+        <ul>
+          <li>VLAN segmentation is a core network security control used to isolate sensitive systems and limit lateral movement in enterprise environments</li>
+          <li>Understanding routing protocols and WAN connectivity is foundational for network security analysis and firewall rule design</li>
+          <li>IPv6 fluency is increasingly required as enterprise networks transition away from IPv4</li>
+          <li>Hands-on CLI experience prepares for real-world switch and router administration in enterprise IT roles</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Joshua Jaggernauth &bull; <a href="mailto:jag06619@icloud.com">jag06619@icloud.com</a></p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.nav-group-btn').forEach(btn => {
+      btn.addEventListener('click', () => btn.closest('.nav-group').classList.toggle('open'));
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.nav-group')) document.querySelectorAll('.nav-group.open').forEach(g => g.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
